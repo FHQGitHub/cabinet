@@ -1,12 +1,12 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <router-link to="/cabinet">{{ msg }}</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'cabinet',
   props: {
     msg: String
   }
@@ -27,6 +27,8 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #030000;
+  font-size: 30px;
+  text-decoration:none;
 }
 </style>
