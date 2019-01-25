@@ -4,7 +4,7 @@
     <searchlan/>
     </div>
     <div>
-    <ccard msg="电阻" pic="../assets/resistance.jpg"></ccard>
+    <ccard msg="电阻"></ccard>
     </div>
 </div>
 </template>

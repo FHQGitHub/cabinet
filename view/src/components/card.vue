@@ -2,7 +2,7 @@
 <el-row>
   <el-col>
     <el-card :body-style="{ padding: '0px',margin: '6px'}" class='abc'>
-      <img class="image" v-bind:src="pic">
+      <img class="image" v-bind:src="options[0].value">
       <div style="padding: 14px;">
         <span>{{msg}}</span>
         <div class="bottom clearfix">
@@ -19,14 +19,14 @@
 export default {
     name:'ccard',
     props: {
-       msg: String,
-       pic: String
+       msg: String
      },
-    data() {  
-        return {
-        currentDate: new Date()
-        };
-    }
+    data:()=>({  
+      currentDate: new Date(),
+      options: [
+        { text: 'One', value: '../assets/resistance.jpg'}
+      ]
+    })
 }
 </script>
 
