@@ -6,7 +6,7 @@
       <el-option label="电阻" value="2"></el-option>
       <el-option label="电感" value="3"></el-option>
     </el-select>
-    <el-button slot="append" icon="el-icon-search"></el-button>
+    <el-button slot="append" icon="el-icon-search" @click="auth()"></el-button>
   </el-input>
 </div>
 </template>
@@ -21,7 +21,13 @@ export default {
       input5: '',
       select: ''
     }
+  },
+  methods:{
+      async auth(){
+        this.$router.push("/resistance");
+      }
   }
+
 }
 </script>
 

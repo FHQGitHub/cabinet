@@ -1,13 +1,13 @@
 <template>
 <el-row>
-  <el-col :span="6" v-for="option in options" :key="option" :offset="index > 0 ? 2 : 0">
-    <el-card :body-style="{ padding: '0px',margin: '6px'}" class='abc'>
-      <img class="image" v-bind:src="option.value">
+  <el-col>
+    <el-card class='abc'>
+      <img class="image" v-bind:src="this.value">
       <div style="padding: 14px;">
-        <span>{{option.text}}</span>
+        <span>{{info}}</span>
         <div class="bottom clearfix">
           <time class="time">{{ currentDate }}</time>
-          <el-button type="text" class="button">查看</el-button>
+          <el-button type="text" class="button" @click="cardClick()">查看</el-button>
         </div>
       </div>
     </el-card>
@@ -18,14 +18,20 @@
 <script>
 export default {
     name:'ccard',
+    props:{
+      info:String,
+      value:String
+    },
     data:()=>({  
-      currentDate: new Date(),
-      options: [
-        { text: '电阻', value: 'resistance.jpg'},
-        { text: '电感', value: 'inductance.jpg'},
-        { text: '电容', value: 'capactance.jpg'},
-      ]
-    })
+      currentDate: new Date()
+    }),
+    methods:{
+      async cardClick(){
+      if(this.info=="电阻") {this.$router.push('/resistance');}
+      else if(this.info=="电容") {this.$router.push('/capatance');}
+      else if(this.info=="电感") {this.$router.push('/inductance');}
+  }
+  }
 }
 </script>
 
@@ -64,7 +70,6 @@ export default {
     margin: 6px;
     position:relative;
     top:150px;
-    display:inline-block;
   }
 
 </style>

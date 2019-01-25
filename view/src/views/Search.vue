@@ -4,7 +4,7 @@
     <searchlan/>
     </div>
     <div>
-    <ccard></ccard>
+    <ccard v-for="option in options" v-bind:info="option.text" v-bind:value="option.value" ></ccard>
     </div>
 </div>
 </template>
@@ -19,11 +19,14 @@ export default {
     ccard,
     searchlan
   },
-  methods: {
-    async dianzu(){
-        this.$router.push("/resistance");
-     }
-  }
+  data:()=>({  
+      currentDate: new Date(),
+      options: [
+        { text: '电阻', value: 'resistance.jpg'},
+        { text: '电感', value: 'inductance.jpg'},
+        { text: '电容', value: 'capactance.jpg'},
+      ]
+    })
 }
 </script>
 
