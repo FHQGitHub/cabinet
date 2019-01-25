@@ -11,7 +11,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background:url(./assets/yun.jpg);
-  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 </style>

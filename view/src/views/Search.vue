@@ -1,5 +1,31 @@
 <template>
 <div class="search">
-    <h1>this is search page</h1>
+    <div>
+    <searchlan/>
+    </div>
+    <div>
+    <ccard msg="电阻" pic="../assets/resistance.jpg"></ccard>
+    </div>
 </div>
 </template>
+
+<script>
+import ccard from '@/components/card.vue'
+import searchlan from '@/components/search.vue'
+
+export default {
+  name: 'search',
+  components: {
+    ccard,
+    searchlan
+  },
+  methods: {
+    async dianzu(){
+        this.$router.push("/resistance");
+     }
+  }
+}
+</script>
+
+<style>
+</style>

@@ -23,6 +23,11 @@ export default new Router({
       path:'/search',
       name:'search',
       component:() =>import('./views/Search.vue')
+    },
+    {
+      path:'/resistance',
+      name:'resistance',
+      component:() =>import('./views/Resistance.vue')
     }
   ]
 })
