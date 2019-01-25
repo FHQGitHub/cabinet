@@ -1,10 +1,10 @@
 <template>
 <el-row>
-  <el-col>
+  <el-col :span="6" v-for="option in options" :key="option" :offset="index > 0 ? 2 : 0">
     <el-card :body-style="{ padding: '0px',margin: '6px'}" class='abc'>
-      <img class="image" v-bind:src="options[0].value">
+      <img class="image" v-bind:src="option.value">
       <div style="padding: 14px;">
-        <span>{{msg}}</span>
+        <span>{{option.text}}</span>
         <div class="bottom clearfix">
           <time class="time">{{ currentDate }}</time>
           <el-button type="text" class="button">查看</el-button>
@@ -18,13 +18,12 @@
 <script>
 export default {
     name:'ccard',
-    props: {
-       msg: String
-     },
     data:()=>({  
       currentDate: new Date(),
       options: [
-        { text: 'One', value: '../assets/resistance.jpg'}
+        { text: '电阻', value: 'resistance.jpg'},
+        { text: '电感', value: 'inductance.jpg'},
+        { text: '电容', value: 'capactance.jpg'},
       ]
     })
 }

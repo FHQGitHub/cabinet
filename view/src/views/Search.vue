@@ -4,7 +4,7 @@
     <searchlan/>
     </div>
     <div>
-    <ccard msg="电阻"></ccard>
+    <ccard></ccard>
     </div>
 </div>
 </template>
