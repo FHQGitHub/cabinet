@@ -24,7 +24,7 @@ export default {
   },
   methods:{
       async auth(){
-        this.$router.push("/resistance");
+        this.$router.push("/sresistance");
       }
   }
 

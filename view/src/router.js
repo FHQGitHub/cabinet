@@ -28,6 +28,21 @@ export default new Router({
       path:'/resistance',
       name:'resistance',
       component:() =>import('./views/Resistance.vue')
+    },
+    {
+      path:'/inductance',
+      name:'inductance',
+      component:() =>import('./views/Inductance.vue')
+    },
+    {
+      path:'/capactance',
+      name:'capactance',
+      component:() =>import('./views/Capactance.vue')
+    },
+    {
+      path:'/sresistance',
+      name:'sresistance',
+      component:() =>import('./views/SResis.vue')
     }
   ]
 })

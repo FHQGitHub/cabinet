@@ -4,7 +4,11 @@
     <searchlan/>
     </div>
     <div>
-    <ccard v-for="option in options" v-bind:info="option.text" v-bind:value="option.value" ></ccard>
+    <el-row>
+    <el-col :span="6" v-for="option in options" :offset="index > 0 ? 2 : 0">
+    <ccard v-bind:info="option.text" v-bind:value="option.value"></ccard>
+    </el-col>
+    </el-row>
     </div>
 </div>
 </template>

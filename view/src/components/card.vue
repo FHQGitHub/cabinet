@@ -1,6 +1,4 @@
 <template>
-<el-row>
-  <el-col>
     <el-card class='abc'>
       <img class="image" v-bind:src="this.value">
       <div style="padding: 14px;">
@@ -11,8 +9,6 @@
         </div>
       </div>
     </el-card>
-  </el-col>
-</el-row>
 </template>
 
 <script>
@@ -28,7 +24,7 @@ export default {
     methods:{
       async cardClick(){
       if(this.info=="电阻") {this.$router.push('/resistance');}
-      else if(this.info=="电容") {this.$router.push('/capatance');}
+      else if(this.info=="电容") {this.$router.push('/capactance');}
       else if(this.info=="电感") {this.$router.push('/inductance');}
   }
   }
