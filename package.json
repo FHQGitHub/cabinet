@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/FHQGitHub/cabinet#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.22"
   }
 }
