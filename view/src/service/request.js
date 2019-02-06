@@ -14,6 +14,7 @@ export const setDomain = ($domain) => {
   domain = $domain
 }
 
+axios.defaults.baseURL="http://localhost:3000"
 /**
  * 
  * @param {*} method 

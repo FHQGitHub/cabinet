@@ -1,20 +1,8 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <navmenu/>
   </div>
 </template>
-
-<script>
-import navmenu from "@/components/navmenu1.vue";
-
-export default {
-  name: "navment",
-  components: {
-    navmenu
-  }
-};
-</script>
 
 <style>
 #app {

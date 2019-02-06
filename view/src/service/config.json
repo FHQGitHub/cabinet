@@ -1,7 +1,7 @@
 {
-    "domain_b":"http://118.25.136.149:8000/api",
-    "domain":"http://localhost:8081/api",
-    "LOGIN":"/login",
+    "domain_b":"http://118.25.136.149/index",
+    "domain":"http://localhost:3000/index",
+    "Login":"/login",
     "Search":"/search",
 
     "Inductance":"/inductance",

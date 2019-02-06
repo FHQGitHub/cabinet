@@ -5,10 +5,10 @@
     <span>登录</span>
     </div>
   <div class="text item">
-    <el-input v-model="input" placeholder="请输入账号"></el-input>
+    <el-input v-model="login.account" placeholder="请输入账号"></el-input>
   </div>
   <div>
-    <el-input v-model="input" type="password" placeholder="请输入密码"></el-input>
+    <el-input v-model="login.password" type="password" placeholder="请输入密码"></el-input>
   </div>
   <div>
    <el-button class="but" type="text" @click="auth()">LOGIN</el-button>
@@ -33,7 +33,22 @@ export default {
   },
   methods: {
     async auth(){
+      this.loading = true;
+    
+      let data=await this.$dataSource.Login(this.login.account,this.login.password)
+      if(data.status==1){
+        this.$cookie.set("user_id",data.account)
+        this.$cookie.set("user_type",data.password)
+        this.$store.commit("login",JSON.stringify(data))
+      
+        this.loading = false;
         this.$router.push("/search");
+        clearInterval(delay)
+      }else{
+        this.$router.push("/")
+        console.log(data.status)
+        console.log(data)
+      }
       }
     }
 };
