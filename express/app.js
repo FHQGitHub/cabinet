@@ -11,6 +11,13 @@ var inductanceRouter=require('./routes/inductance');
 var capacitanceRouter=require('./routes/capacitance');
 
 var app = express();
+app.all('*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With,Content-Type");
+  res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+  next();
+});
+
 
 // // view engine setup
 //这里是渲染前端页面用的jade

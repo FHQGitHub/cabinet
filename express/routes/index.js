@@ -26,7 +26,7 @@ router.post('/login',function(req,res){
       for(i=0;i<result.length;i++){
           if(result[i].account==account&&result[i].password==password){
               flag=1;
-              res.send("登陆成功！");
+              res.send(JSON.stringify(result[0]));
           }
       }
       if(flag==0){
