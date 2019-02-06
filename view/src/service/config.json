@@ -1,0 +1,10 @@
+{
+    "domain_b":"http://118.25.136.149:8000/api",
+    "domain":"http://localhost:8081/api",
+    "LOGIN":"/login",
+    "Search":"/search",
+
+    "Inductance":"/inductance",
+    "Resistance":"/resistance",
+    "Capactance":"/capactance"
+}
