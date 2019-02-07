@@ -13,8 +13,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/Login',
-      name: 'Login',
+      path: '/login',
+      name: 'login',
       component: Login
     },
 
@@ -42,13 +42,17 @@ export default new Router({
       component:() =>import('./views/Inductance.vue')
     },
     {
-      path:'/capactance',
+      path:'/capacitance',
       name:'capactance',
-      component:() =>import('./views/Capactance.vue')
+      component:() =>import('./views/Capacitance.vue')
     },
     {
       path:'/sresistance',
       name:'sresistance',
+      //meta: {
+        //title:" ",
+        //requireAuth: true
+      //},
       component:() =>import('./views/SResis.vue')
     }
   ]

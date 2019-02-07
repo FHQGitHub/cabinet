@@ -20,7 +20,7 @@ let Resistance = async()=> {
     return JSON.parse(JSON.stringify(response))
 }
 //电容
-let Capacitance = async()=> {
+let  Capacitance = async()=> {
     let response = await request(`get`, `${config.Capacitance}`)
     return JSON.parse(JSON.stringify(response))
 }

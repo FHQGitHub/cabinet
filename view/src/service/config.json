@@ -1,10 +1,10 @@
 {
     "domain_b":"http://118.25.136.149/index",
-    "domain":"http://localhost:3000/index",
-    "Login":"/login",
+    "domain":"http://localhost:3000",
+    "Login":"/index/login",
     "Search":"/search",
 
     "Inductance":"/inductance",
     "Resistance":"/resistance",
-    "Capactance":"/capactance"
+    "Capacitance":"/capacitance"
 }
