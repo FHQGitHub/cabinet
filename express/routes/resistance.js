@@ -13,7 +13,7 @@ router.get('/',function(req,res){
       if (err) {
         res.send({
           code :0,
-          info:"查询出现错误"
+          info:"查询出现错误"  
         })
     }else{
         res.send({

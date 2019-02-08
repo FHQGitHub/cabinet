@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');//
 var resistanceRouter=require('./routes/resistance');
 var inductanceRouter=require('./routes/inductance');
 var capacitanceRouter=require('./routes/capacitance');
+var searchRouter=require('./routes/search');
 
 var app = express();
 app.all('*', function(req, res, next) {
@@ -40,6 +41,7 @@ app.use('/users', usersRouter);//这个'user'路径，即在浏览器里输入ht
 app.use('/resistance',resistanceRouter);
 app.use('/inductance',inductanceRouter);
 app.use('/capacitance',capacitanceRouter);
+app.use('/search',searchRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
