@@ -1,0 +1,23 @@
+{
+  "name": "cabinet",
+  "version": "1.0.0",
+  "description": "2019年1月23日开始踩坑",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FHQGitHub/cabinet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FHQGitHub/cabinet/issues"
+  },
+  "homepage": "https://github.com/FHQGitHub/cabinet#readme",
+  "dependencies": {
+    "vue": "^2.6.2",
+    "vue-template-compiler": "^2.6.3"
+  }
+}

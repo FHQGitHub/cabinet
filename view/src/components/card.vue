@@ -24,7 +24,7 @@ export default {
     methods:{
       async cardClick(){
       if(this.info=="电阻") {this.$router.push('/resistance');}
-      else if(this.info=="电容") {this.$router.push('/capactance');}
+      else if(this.info=="电容") {this.$router.push('/capacitance');}
       else if(this.info=="电感") {this.$router.push('/inductance');}
   }
   }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>this is resistance list</h1>
+    <h1>This is capactance page</h1>
     <listt v-bind:info="this.list"></listt>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import listt from "@/components/list.vue";
 
 export default {
-  name: "resistance",
+  name: "capacitance",
   components: {
     listt
   },
@@ -17,7 +17,7 @@ export default {
     list: []
   }),
   mounted: async function() {
-    let data=await this.$dataSource.Resistance()
+    let data=await this.$dataSource.Capacitance()
     this.list=data.data
     //从cookie获取登录信息
     if (this.$cookie.get("user_id") != "") {
