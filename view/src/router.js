@@ -47,13 +47,13 @@ export default new Router({
       component:() =>import('./views/Capacitance.vue')
     },
     {
-      path:'/sresistance',
-      name:'sresistance',
+      path:'/ssearch',
+      name:'ssearch',
       //meta: {
         //title:" ",
         //requireAuth: true
       //},
-      component:() =>import('./views/SResis.vue')
+      component:() =>import('./views/Ssearch.vue')
     }
   ]
 })

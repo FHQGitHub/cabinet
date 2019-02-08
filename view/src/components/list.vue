@@ -16,11 +16,11 @@
       info: {
         type: Array
       }
-  },
-  data() {
-    return {
-       search:this.info
-    }
- } 
+  }
+ // data() {
+   // return {
+    //   search:this.info
+    //}
+ //} 
 }
 </script>

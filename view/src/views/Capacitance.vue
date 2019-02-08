@@ -2,6 +2,7 @@
   <div>
     <h1>This is capactance page</h1>
     <listt v-bind:info="this.list"></listt>
+   <!-- <h4>{{this.list}}</h4> -->
   </div>
 </template>
 
