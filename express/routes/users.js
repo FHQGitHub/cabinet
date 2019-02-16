@@ -10,10 +10,7 @@
         info:"查询出现错误"
       })
    }else{
-      res.send({
-        code: 1,
-        data: JSON.stringify(result)
-      });
+      res.send(JSON.stringify(result));
      console.log(result);
    }
   });
