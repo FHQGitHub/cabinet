@@ -1,5 +1,5 @@
-##cabinet tips
-###<center>VUE</center>
+## cabinet tips
+### <center>VUE</center>
 * 新建一个库
 > git clone http://...(clone到本地文件夹)
 > git init
