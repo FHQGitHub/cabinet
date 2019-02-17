@@ -13,7 +13,7 @@
 - `npm start  //此处是提醒我们可以进入项目根目录，如何启动服务器`
 ## 这就是建完项目之后的项目目录
 ![image](https://github.com/FHQGitHub/cabinet/blob/master/tips/express/images/1.png)
-- bin：是用来启动应用（服务器） 
+- bin：是用来启动应用（服务器） ，其中www.js 文件里面可以修改启动的端口
 - node_modules：是依赖的模块 
 - public：是存放静态资源的 
 - routes：路由（可以问问度娘，了解得更加具体）主要是确定应用程序如何响应对特定端点的客户机发起的请求，包含一个URI（标识、定位任何资源的字符串）和一个特定的HTTP请求方法（如：post、axios等） 
