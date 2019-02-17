@@ -21,4 +21,26 @@
 - app.js：该程序是main.js文件以及服务器的启动入口
 ## 启动了服务器之后
 终端会输出node ./bin/www,访问localhost:3000就会有express的初始页面出现
+## 如何来使用这个框架呢？
+### 先来看app.js吧，app.js原有的一些代码不要改变，和自己手动写的代码相关的有
+这里是把user.js和index.js等等在routes里面的文件.....都require进来
+```
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var resistanceRouter=require('./routes/resistance');
+var inductanceRouter=require('./routes/inductance');
+var capacitanceRouter=require('./routes/capacitance');
+```
+然后再app.use它们，注意这里设置的路径是在**浏览器地址栏**里访问的路径
+```
+app.use('/index', indexRouter);
+app.use('/users', usersRouter);//这个'user'路径，即在浏览器里输入http://localhost:3000/users ,就会访问到user.js渲染的页面
+app.use('/resistance',resistanceRouter);
+app.use('/inductance',inductanceRouter);
+app.use('/capacitance',capacitanceRouter);
+```
+### 再来看routes文件夹里面的js文件
+这里面的user.js文件
+[!images](https://github.com/FHQGitHub/cabinet/blob/master/tips/express/images/2.png)
+
 
