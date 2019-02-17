@@ -12,6 +12,5 @@
 - `npm install //此处是提醒我们可以进入项目根目录，执行npm install 安装依赖模块`
 - `npm start  //此处是提醒我们可以进入项目根目录，如何启动服务器`
 
-![image]
-(https://github.com/FHQGitHub/cabinet/blob/master/tips/express/images/)%40F)CD04A6K%7B6_19%5B(X5V)D.png)
+![image](https://github.com/FHQGitHub/cabinet/blob/master/tips/express/images/)%40F)CD04A6K%7B6_19%5B(X5V)D.png)
 
